@@ -40,6 +40,8 @@ def getPage(S):
     event_validation = soup.select_one("#__EVENTVALIDATION")['value']
     view_state_generator = soup.select_one('#__VIEWSTATEGENERATOR')['value']
     view_state = soup.select_one('#__VIEWSTATE')['value']
+    student_enrollment = input('Enter Enrollment')
+    student_password = input('Enter Password')
     form_data = {
         '__LASTFOCUS' : "",
         '__EVENTTARGET' : "ctl00$BodyPH$btnLogin",
